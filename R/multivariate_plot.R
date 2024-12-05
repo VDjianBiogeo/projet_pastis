@@ -27,7 +27,7 @@ multivariate_plot <- function(multi_output){
     ggrepel::geom_label_repel(aes(x = `coord.Dim.1`,
                                   y = `coord.Dim.2`,
                                   label = rownames(row_coord)),
-                              data = row_coord) 
+                              data = row_coord) +
     theme_bw(base_size = 18) +
     labs(x = paste0("Dim1 (",
                     round(eig_percent[1,2], digits = 2),
