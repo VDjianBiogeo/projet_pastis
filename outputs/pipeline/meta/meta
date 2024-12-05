@@ -1,0 +1,3 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+path|stem|c5099dd32f3a3f42|5bea5287c580ef2c|2c530c1562a7fbd1|1488123031|C:/Users/valen/Dropbox/Thèse régionalisation subantarctique/Formations/CESAB/Cours et codes/projet_pastis/projet_pastis/data/Meteo.txt|t19698.382989896s|e07aed41205a3210|1153|file|local|vector|||0||
+meteo_data|stem|8781a8b0aa431de5|5fa46b5fd0a3c724|b8ddff0a5964a28f|-697645030||t20062.3966475143s|659229575a55c101|829|rds|local|vector|||0||
