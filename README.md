@@ -2,17 +2,10 @@
 
 
 > [!IMPORTANT]  
-> This project is the result of the Practice 2 of the training course
-> [Reproducible Research in Computational Ecology](https://rdatatoolbox.github.io).
+> This project will reveal whether the South of France is truly where you think it is.
 
 
-
-This project aims to download the [PanTHERIA](https://doi.org/10.1890/08-1494.1) 
-database (Jones _et al._, 2009) and the 
-[WWF WildFinder](https://www.worldwildlife.org/pages/wildfinder-database) 
-database (World Wildlife Fund 2006). It is structured as a research compendium 
-to be reproducible.
-
+The Pastis Project aims to explore the geographical and subjective perceptions of the French regarding the location of the "south of France".
 
 
 ## Content
