@@ -23,7 +23,7 @@ list(
   tar_target(name = cities_data, command = read_data(path = here::here("data", "cities.csv"), header = TRUE)),
   
   ### Read survey data
-  tar_target(name = survey_data, command = read_data(path = here::here("data", "survey_data.csv"), header = TRUE))
+  tar_target(name = survey_data, command = read_data(path = here::here("data", "survey_data.csv"), header = TRUE, dec = ";"))
   
   ### Combine data
   
