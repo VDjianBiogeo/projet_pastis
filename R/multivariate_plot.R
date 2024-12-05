@@ -11,7 +11,7 @@
 
 multivariate_plot <- function(multi_output){
   
-  row_coord <- as.data.frame(multi_output$ind)
+  row_coord <- as.data.frame(multi_output$ind) 
   col_coord <- as.data.frame(multi_output$var)
   eig_percent <- as.data.frame(multi_output$eig)
   
@@ -27,15 +27,15 @@ multivariate_plot <- function(multi_output){
     ggrepel::geom_label_repel(aes(x = `coord.Dim.1`,
                                   y = `coord.Dim.2`,
                                   label = rownames(row_coord)),
-                              data = row_coord) +
+                              data = row_coord) 
     theme_bw(base_size = 18) +
-    labs(x = paste0("Dim1 (", 
+    labs(x = paste0("Dim1 (",
                     round(eig_percent[1,2], digits = 2),
                     "%)"),
          y = paste0("Dim2 (",
                     round(eig_percent[2,2], digits = 2),
                     "%)"))
-  
+
   ggsave(filename = here::here("figures",
                                "pca meteo villes.png"),
          plot = multi_plot,

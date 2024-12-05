@@ -19,5 +19,5 @@ factopca <- function(data, col_rownames){
     pca_output <- FactoMineR::PCA(X = data[,sapply(data, typeof) == "double"], 
                     scale.unit = T)
   }
-  return()
+  return(pca_output)
 }
