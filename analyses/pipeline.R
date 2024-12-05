@@ -12,15 +12,6 @@ list(
   ## Meteo data ----
   tar_target(name = meteo_data, command = read_data(path = here::here("data", "meteo.txt"), header = TRUE, dec = ",")),
   
-  ## Path to meteo data ----
-  # tar_target(name = meteo_path, 
-  #            here::here("data", "Meteo.txt"), 
-  #            format = "file"),
-  # 
-  # ## Reading meteo data ----
-  # tar_target(name = meteo_data, 
-  #            command = read.table(meteo_path, header = T, dec = ",")),
-  
   ## Make a PCA on meteo data ----
   tar_target(name = pca_meteo,
              command = factopca(meteo_data, 
