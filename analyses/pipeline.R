@@ -13,6 +13,12 @@ list(
   
   ## Reading meteo data ----
   tar_target(name = meteo_data, 
-             command = read.table(path, header = T))
+             command = read.table(path, header = T, dec = ",")),
+  
+  ## Make a PCA on meteo data
+  tar_target(name = pca_meteo,
+             command = factopca(meteo_data, 
+                                "Ville")),
+  
   
 )
