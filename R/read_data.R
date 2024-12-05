@@ -11,14 +11,14 @@
 #' @importFrom readr read_csv
 #' 
 
-read_data = function(path, header = FALSE, dec = ".") {
+read_data = function(path, header = FALSE, dec = ".", sep = ",") {
   
   if (stringr::str_detect(string = path, pattern = ".csv")) {
-    data = read.csv(file = path, header = header, dec = dec)
+    data = read.csv(file = path, header = header, dec = dec, sep = sep)
   } else if (stringr::str_detect(string = path, pattern = ".txt")) {
-    data = read.table(file = path, header = header, dec = dec)
+    data = read.table(file = path, header = header, dec = dec, sep = sep)
   }
-  
+
   return(as.data.frame(data))
 }
 

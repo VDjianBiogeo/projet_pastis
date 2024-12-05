@@ -10,7 +10,7 @@ list(
   ### Read data
   tar_target(name = meteo_data, 
              command = read_data(path = here::here("data", "meteo.txt"), 
-                                 header = TRUE, dec = ",")),
+                                 header = TRUE, dec = ",", sep = "\t")),
   
   ### Make a PCA
   tar_target(name = pca_meteo,
@@ -21,13 +21,26 @@ list(
              command = multivariate_plot(pca_meteo)),
   
   ## Survey and Cities data ----
+  ### Read survey data
+  tar_target(name = survey_data, command = read_data(path = here::here("data", "survey_data.csv"), header = TRUE, dec = ",", sep = ";")),
+  
+  ### Extract zipcodes
+  tar_target(name = zipcodes, command = unique_zipcodes(data = survey_data, col = 1:(dim(survey_data)[2]-1))),
+  
   ### Read cities data
   tar_target(name = cities_data, command = read_data(path = here::here("data", "cities.csv"), header = TRUE)),
   
-  ### Read survey data
-  tar_target(name = survey_data, command = read_data(path = here::here("data", "survey_data.csv"), header = TRUE, dec = ";"))
+  ### Extract cities from zipcodes
+  tar_target(name = cities_data_extract, command = extract_coordinates_from_zipcode(data = cities_data, zipcode_col_name = "zip_code", zipcodes_vec = zipcodes)),
   
   ### Combine data
+  tar_target(name = childhood_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "childhood")),
+  tar_target(name = present_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "present")),
+  tar_target(name = south_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "south")),
+  tar_target(name = north_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "north")),
+  tar_target(name = east_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "east")),
+  tar_target(name = west_data, command = join_data(cities_data = cities_data_extract, survey_data = survey_data, type = "west"))
+  
   
 
 )
