@@ -8,7 +8,9 @@ tar_source()
 list(
   ## Meteo data ----
   ### Read data
-  tar_target(name = meteo_data, command = read_data(path = here::here("data", "meteo.txt"), header = TRUE, dec = ",")),
+  tar_target(name = meteo_data, 
+             command = read_data(path = here::here("data", "meteo.txt"), 
+                                 header = TRUE, dec = ",")),
   
   ### Make a PCA
   tar_target(name = pca_meteo,
@@ -27,4 +29,5 @@ list(
   
   ### Combine data
   
+
 )
