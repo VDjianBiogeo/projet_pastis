@@ -2,20 +2,24 @@ library(targets)
 library(tarchetypes)
 
 # Configuration ----
-tar_config_set(store = here::here("outputs", "pipeline"), 
-               script = here::here("analyses", "pipeline.R"))
 tar_source()
 
 # Defining pipeline ----
 list(
-  ## Path to meteo data ----
-  tar_target(name = meteo_path, 
-             here::here("data", "Meteo.txt"), 
-             format = "file"),
+  ## Cities data ----
+  tar_target(name = cities_data, command = read_data(path = here::here("data", "cities.csv"), header = TRUE)),
   
-  ## Reading meteo data ----
-  tar_target(name = meteo_data, 
-             command = read.table(meteo_path, header = T, dec = ",")),
+  ## Meteo data ----
+  tar_target(name = meteo_data, command = read_data(path = here::here("data", "meteo.txt"), header = TRUE, dec = ",")),
+  
+  ## Path to meteo data ----
+  # tar_target(name = meteo_path, 
+  #            here::here("data", "Meteo.txt"), 
+  #            format = "file"),
+  # 
+  # ## Reading meteo data ----
+  # tar_target(name = meteo_data, 
+  #            command = read.table(meteo_path, header = T, dec = ",")),
   
   ## Make a PCA on meteo data ----
   tar_target(name = pca_meteo,
@@ -24,6 +28,8 @@ list(
   
   tar_target(name = pca_meteo_graph,
              command = multivariate_plot(pca_meteo))
+  
+  
   
   
 )
