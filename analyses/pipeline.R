@@ -9,11 +9,13 @@ tar_source()
 # Defining pipeline ----
 list(
   ## Path to meteo data ----
-  tar_target(name = path, here::here("data", "Meteo.txt"), format = "file"),
+  tar_target(name = meteo_path, 
+             here::here("data", "Meteo.txt"), 
+             format = "file"),
   
   ## Reading meteo data ----
   tar_target(name = meteo_data, 
-             command = read.table(path, header = T, dec = ",")),
+             command = read.table(meteo_path, header = T, dec = ",")),
   
   ## Make a PCA on meteo data ----
   tar_target(name = pca_meteo,
