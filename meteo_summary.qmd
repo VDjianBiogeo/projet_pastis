@@ -1,0 +1,38 @@
+---
+title: "meteo_summary"
+format: html
+editor: visual
+execute:
+  echo: false
+  error: true
+  warning: false
+---
+
+## Finding the South using temperature
+
+Finding a good criteria to actually identify the south of our beautiful and diverse country can be quite a conondrum. Do we base ourselves on climate? On the landscape? Or maybe based on changes in floral composition?
+
+For simplicity's sake (and our own), we chose something rather simple, and yet reflecting the main difference between the north and the south: differences in seasonal temperature for several french cities.
+
+```{r}
+
+library(targets)
+tar_config_set(store = here::here("outputs", "pipeline"), 
+               script = here::here("analyses", "pipeline.R"))
+
+```
+
+```{r}
+knitr::kable(head(tar_read(meteo_data)))
+````
+
+By using a useful analysis called a Principal Component Analysis, we can resume the variance in our dataset and identify towns with similar monthly temperatures.
+
+``` {r}
+tar_load(pca_meteo_graph)
+
+pca_meteo_graph
+```
+
+If we look closely, towns are split on the first axis, with northern cities such as Lille, Brest or Strasbourg on the left side of the first axis, and with southern cities such as Marseille, Montpellier and Nice on the right side of the axis. But we can see two cities that are in the middle of this axis: **Lyon** and **Nantes**. Could it be that the "south" we so desperatly searched for is below the line traced between Nantes and Lyon?
+

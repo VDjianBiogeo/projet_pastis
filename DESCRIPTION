@@ -3,21 +3,22 @@ Type: Package
 Title: The Title of the Project
 Version: 0.0.0.9000
 Authors@R: c(
-    person(given   = "Philippine",
-           family  = "Morlot",
+    person(given   = "Philippine", "Titouan", "Valentin"
+           family  = "Morlot", "Dionet", "Djian"
            role    = c("aut", "cre", "cph"),
-           email   = "philippine.morlot11@gmail.com",
-           comment = c(ORCID = "0009-0006-1324-0099")))
-Description: A paragraph providing a full description of the project (on 
-    several lines...)
+           email   = "philippine.morlot11@gmail.com", "titouan.dionet@univ-lorraine.fr", "valentin.djian@sorbonne-universite.fr"
+           comment = c(ORCID = "0009-0006-1324-0099", "0009-0006-5602-1873")))
+Description: Pastis Project aims to explore the geographical and subjective perceptions of the French regarding the location of the "south of France".
 URL: https://github.com/philou11/projet_pastis
-BugReports: https://github.com/philou11/projet_pastis/issues
-License: {{license}}
+BugReports: <https://github.com/VDjianBiogeo/projet_pastis/issues>, <https://github.com/titouan-dionet/projet_pastis/issues>, <https://github.com/philou11/projet_pastis/issues>
+License: GPL-2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
+    FactoMineR,
     here,
     stats,
+    stringr,
     tarchetypes,
     targets
