@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 book:
-  title: "book2"
-  author: "Norah Jones"
+  title: "Project PASTIS"
+  author: "Valentin Djian, Philippine Morlot and Titouan Dionet"
   date: "05/12/2024"
   
   page-footer: 
@@ -16,6 +16,8 @@ book:
   chapters:
     - index.qmd
     - meteo_summary.qmd
+    - survey_summary.qmd
+    - conclusion.qmd
 
 
 format:
