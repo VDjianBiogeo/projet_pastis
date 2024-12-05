@@ -1,0 +1,24 @@
+name;childhood_town;childhood_code;present_town;present_code;south;south_code;north;north_code;east;east_code;west;west_code;chilliness
+Leo;Nice;6200;Montpellier;34000;Aurillac;15000;Paris;75001;Bourgoin Jallieu;38300;Limoges;87000;3,5
+Carole;Le Mans;72000;Montpellier;34000;Bordeaux;33000;Metz;57000;Dijon;21000;Nantes;44000;3
+Alycia;Moirans en montagne;39260;Montpellier;34000;Montelimar;26200;Nancy;54000;Lyon;69001;Limoges;87000;1,75
+Anaelle;St Yvi;29140;Brest;29200;Lyon;69001;Caen;14000;Reims;51100;Angers;49000;3
+Anonymous1;Strasbourg;67000;Montpellier;34000;Mulhouse;68100;Amiens;80000;Nancy;54000;Nantes;44000;2,21
+Milena;Perigueux;24000;Aix en Provence;13100;Bordeaux;33000;Beauvais;60000;St Etienne;42000;Poitiers;86000;3
+Julie;Paris;75001;Montpellier;34000;Millau;12100;Paris;75001;Lyon;69001;Nantes;44000;4,5
+Tom;Montpellier;34000;Montpellier;34000;Avignon;84000;Dijon;21000;Nancy;54000;Nantes;44000;4
+Sophie;St Lo;50000;Sete;34200;La Rochelle;17000;Nantes;44000;Nancy;54000;Nantes;44000;4,5
+Lise;Maisons Alfort;94700;Paris;75001;Lyon;69001;Paris;75001;Nancy;54000;Bordeaux;33000;2
+Quentin;St Maur des fosses;94210;Villejuif;94800;Lyon;69001;Paris;75001;Troyes;10000;Le Mans;72000;1,5
+Hyppolyte;Orleans;45000;Paris;75001;Clermont Ferrand;63000;Paris;75001;Lyon;69001;Toulouse;31000;4
+Anonymous2;Paris;75001;Toulouse;31000;Foix;9000;Lille;59000;Grenoble;38000;Bordeaux;33000;1
+Estelle;Val d Ize;35450;Montpellier;34000;Lyon;69001;Amiens;80000;Reims;51100;Laval;53000;3
+Philippine;Delme;57590;Metz;57000;Lyon;69001;Besancon;25000;Reims;51100;Tours;37000;3
+Titouan;Buhl;68530;Metz;57000;Avignon;84000;Amiens;80000;Belfort;90000;Bordeaux;33000;4
+Valentin;Paris;75001;Paris;75001;Lyon;69001;Amiens;80000;Besancon;25000;Angers;49000;1
+Iago;Lourmarin;84160;Montpellier;34200;Sisteron;4200;Sisteron;4200;Clermont Ferrand;63000;Clermont Ferrand;63000;1
+Lucas;Lyon;69001;Brest;29200;Valence;26000;Le Havre;76600;Clermont Ferrand;63000;Poitiers;86000;3
+Chloe;Montpellier;34000;Brest;29200;Bordeaux;33000;La Rochelle;17000;Valence;26000;Nantes;44000;4
+Nico;Oloron Ste Marie;64400;Lunel;34400;Arcachon;33120;Bordeaux;33000;Nimes;30000;Toulouse;31000;1
+Aurelie;Dax;40100;Lyon;69001;Bordeaux;33000;Poitiers;86000;Montpellier;34000;Toulouse;31000;3
+Francois;Marseille;13001;St Denis;97490;Lyon;69001;Lyon;69001;Clermont Ferrand;63000;Clermont Ferrand;63000;3
