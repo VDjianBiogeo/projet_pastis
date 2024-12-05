@@ -19,8 +19,4 @@ list(
   
   tar_target(name = pca_meteo_graph,
              command = multivariate_plot(pca_meteo))
-  
-  
-  
-  
 )
