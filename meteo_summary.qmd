@@ -29,5 +29,10 @@ knitr::kable(head(tar_read(meteo_data)))
 By using a useful analysis called a Principal Component Analysis, we can resume the variance in our dataset and identify towns with similar monthly temperatures.
 
 ``` {r}
+tar_load(pca_meteo_graph)
 
+pca_meteo_graph
 ```
+
+If we look closely, towns are split on the first axis, with northern cities such as Lille, Brest or Strasbourg on the left side of the first axis, and with southern cities such as Marseille, Montpellier and Nice on the right side of the axis. But we can see two cities that are in the middle of this axis: **Lyon** and **Nantes**. Could it be that the "south" we so desperatly searched for is below the line traced between Nantes and Lyon?
+

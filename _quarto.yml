@@ -16,8 +16,7 @@ book:
   chapters:
     - index.qmd
     - meteo_summary.qmd
-    - survey_summary.qmd
-    - conclusion.qmd
+
 
 format:
   html:
