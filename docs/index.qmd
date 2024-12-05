@@ -1,10 +1,8 @@
----
-title: "website"
----
+# Preface {.unnumbered}
 
-This is a Quarto website.
+This is a Quarto book.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
 ```{r}
 1 + 1
