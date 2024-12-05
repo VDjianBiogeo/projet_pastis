@@ -9,3 +9,4 @@ pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t
 pca_meteo_graph|stem|f1176e7c24a78d62|62dacc4f4fb8d850|8d897ec6be239e3a|1606173675||t20062.6014203835s|78c7007326b39b36|124024|rds|local|vector|||1.67||
 read_data|function|59986a28c79ae286|||||||||||||||
 select_cities|function|ed070b8c05a6f047|||||||||||||||
+survey_data|stem||e63608dd02a46b79|d3d48734f21443f4|-903631571||t20062.6091661846s||0|rds|local|vector|||0.08|impossible douvrir le fichier CUsersp05421Titouan10. ProgrammationRprojet_pastisdatasurvey_data.csv  No such file or directory|impossible douvrir la connexion
