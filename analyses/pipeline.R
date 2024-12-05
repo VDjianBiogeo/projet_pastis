@@ -15,10 +15,13 @@ list(
   tar_target(name = meteo_data, 
              command = read.table(path, header = T, dec = ",")),
   
-  ## Make a PCA on meteo data
+  ## Make a PCA on meteo data ----
   tar_target(name = pca_meteo,
              command = factopca(meteo_data, 
                                 "Ville")),
+  
+  tar_target(name = pca_meteo_graph,
+             command = multivariate_plot(pca_meteo))
   
   
 )
