@@ -1,5 +1,8 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|d3d48734f21443f4|211886505||t20062.6466383953s|13f8890f4153f827|1188294|rds|local|vector|||0.266||
+
+
+cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|d3d48734f21443f4|211886505||t20062.5904551036s|13f8890f4153f827|1188294|rds|local|vector|||0.2||
+
 extract_coordinates_from_zipcode|function|ed070b8c05a6f047|||||||||||||||
 factopca|function|5c112c4ca65a03c4|||||||||||||||
 meteo_data|stem|024ad53ac96f5507|ef2f8ad3dc46b9c5|d3d48734f21443f4|-697645030||t20062.5779436528s|0a2706eaf0b2991e|813|rds|local|vector|||0.04||
@@ -10,5 +13,6 @@ pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t
 pca_meteo_graph|stem|3e2a9f6952e04f73|62dacc4f4fb8d850|335ae517ec0d2a21|1606173675||t20062.6466581309s|8cb1347a30b78823|127459|rds|local|vector|||1.593||
 read_data|function|59986a28c79ae286|||||||||||||||
 select_cities|function|ed070b8c05a6f047|||||||||||||||
-survey_data|stem|09bdcbdf4f4229ca|e63608dd02a46b79|d3d48734f21443f4|-903631571||t20062.6466319048s|28374a06f2f6c5b5|1071|rds|local|vector|||0.797||
+
+survey_data|stem|09bdcbdf4f4229ca|392a030b89266c66|d3d48734f21443f4|-903631571||t20062.6379738205s|28374a06f2f6c5b5|1071|rds|local|vector|||0.15||
 unique_zipcodes|function|c047d3aebcc47466|||||||||||||||
