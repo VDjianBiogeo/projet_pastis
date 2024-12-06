@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1c8dcf1a7306d84dd31886132a9cd32d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -141,9 +141,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#pastis-project" id="toc-pastis-project" class="nav-link active" data-scroll-target="#pastis-project">Pastis project <img src=".\illustrations/emoji_pastis.png" class="img-fluid" width="26"></a>
+  <li><a href="#pastis-project" id="toc-pastis-project" class="nav-link active" data-scroll-target="#pastis-project"><span class="header-section-number">1</span> Pastis project</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">0.1</span> Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -182,10 +182,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="pastis-project" class="level1 unnumbered">
-<h1 class="unnumbered">Pastis project <img src=".\illustrations/emoji_pastis.png" class="img-fluid" width="26"></h1>
-<section id="introduction" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
+<section id="pastis-project" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Pastis project</h1>
+<p><img src="illustrations/emoji_pastis.png" class="img-fluid" width="26"></p>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
 <p>The Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the “south of France”. Through a survey, we collect data from participants who provide :</p>
 <ul>
 <li><p>their childhood city and their current city of residence ;</p></li>
@@ -199,7 +200,12 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Does this perception vary depending on their geographical origin or current place of residence ?</p></li>
 <li><p>Is there a connection between perceived sensitivity to cold and the location of the south as identified by respondents ?</p></li>
 </ul>
-<p>The Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the “south” for each individual. 🍹</p>
+<p>The Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the “south” for each individual.</p>
+<p><br></p>
+<!-- ::: container -->
+<iframe class="responsive-iframe" src="https://github.com/philou11/pastis-presentation">
+</iframe>
+<!-- ::: -->
 
 
 </section>
@@ -288,6 +294,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -398,6 +406,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
