@@ -1,26 +1,28 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-join_cities_survey|function|67237d95f9cb59ec
-join_coord_data|function|448f9c6bbf21db4a
-mapping_pca|function|1340aebdd1aa9301
-multivariate_plot|function|88f98725c650c250
-pivot_data|function|f8b9775231cdbdff
-factopca|function|5c112c4ca65a03c4
-extract_coordinates_from_zipcode|function|3045c57b5e9d297c
-unique_zipcodes|function|c506bf7e6009a58e
-read_data|function|183d92567ca15f46
-cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|abfe70d4f262bfe0|211886505||t20063.4015282225s|13f8890f4153f827|1188294|rds|local|vector|||0.125||
-survey_data|stem|e5743dac03590fd0|f1114602e6753a11|abfe70d4f262bfe0|-903631571||t20063.4015285118s|7e2538694ca46b04|1330|rds|local|vector|||0.016||
-meteo_data|stem|024ad53ac96f5507|e78e1fc125fe033c|abfe70d4f262bfe0|-697645030||t20063.4015287665s|0a2706eaf0b2991e|813|rds|local|vector|||0||
-zipcodes|stem|b5c454bc89fb68a7|08791ef2f1d96c92|310270a05dc33281|382738852||t20063.4015288706s|e020573ec4427202|277|rds|local|vector|||0|NAs introduits lors de la conversion automatique|
-pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t20063.4015408215s|0feaca50c92f12da|6740|rds|local|vector|||1.032||
-cities_data_extract|stem|a5b8d992627c1691|c4bf259d013df920|df3ca3028a0794e7|-1716341917||t20063.4015410993s|60630c5b904a09cb|8462|rds|local|vector|||0||
-pca_meteo_graph|stem|146b29b0b734b874|62dacc4f4fb8d850|335ae517ec0d2a21|1606173675||t20063.4015464004s|8cb1347a30b78823|127459|rds|local|vector|||0.407||
-pca_map|stem|20c39718cc4dc29b|ee75bb33a12a5b96|f108fbc0eca41b07|713036061||t20063.4015836828s|5b13864dc44fbfac|6531002|rds|local|vector|||2.312||
-present_data|stem|0c031ee036af9b29|c8dceb2c5bcef173|8c80c45c3b43a3d4|1796563436||t20063.4015840662s|1c70014840bd7a96|734|rds|local|vector|||0.016||
-childhood_data|stem|691d02b16e65f10c|307405714956ddab|8c80c45c3b43a3d4|946005615||t20063.4015842166s|690bb82e41c7a496|992|rds|local|vector|||0.016||
-east_data|stem|3a985a693e1b9cc0|92539f3145c8dc04|8c80c45c3b43a3d4|-26071950||t20063.4015844129s|f271421d81d94a83|818|rds|local|vector|||0||
-north_data|stem|8e6cea0f26e662b9|bbff9c12d6d9ba02|8c80c45c3b43a3d4|-865072972||t20063.4015845403s|2765b81ccae0f006|848|rds|local|vector|||0||
-south_data|stem|1d0b94d01d80bb4d|7d9592e49ca8b9c6|8c80c45c3b43a3d4|543313425||t20063.4015846906s|b611596d7f4db2c4|810|rds|local|vector|||0||
-west_data|stem|2192e9c05478e9b7|04d13d80662a47cf|8c80c45c3b43a3d4|-2113480544||t20063.4015849453s|98a87310124c0bb8|690|rds|local|vector|||0.016||
-coord_data|stem|dcbe3de9a3370cd1|9d423c913d0df450|0fa47f9a06bc5140|-1704648936||t20063.401585304s|f29db5e42908fbbf|2644|rds|local|vector|||0.015||
-coord_data_long|stem|26292e8a50f78228|b6e2c6401b490210|2ff310874aea57d9|553160998||t20063.4015859177s|5565ebcffd4e98f9|2622|rds|local|vector|||0.031||
+childhood_data|stem|691d02b16e65f10c|307405714956ddab|8c80c45c3b43a3d4|946005615||t20063.3643308417s|690bb82e41c7a496|992|rds|local|vector|||0||
+cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|abfe70d4f262bfe0|211886505||t20062.7087177203s|13f8890f4153f827|1188294|rds|local|vector|||0.22||
+cities_data_extract|stem|a5b8d992627c1691|c4bf259d013df920|df3ca3028a0794e7|-1716341917||t20062.6744321521s|60630c5b904a09cb|8462|rds|local|vector|||0.01||
+coord_data|stem|dcbe3de9a3370cd1|9d423c913d0df450|0fa47f9a06bc5140|-1704648936||t20063.3701190265s|f29db5e42908fbbf|2644|rds|local|vector|||0.01||
+coord_data_long|stem|26292e8a50f78228|b6e2c6401b490210|2ff310874aea57d9|553160998||t20063.3912790996s|5565ebcffd4e98f9|2622|rds|local|vector|||0.13||
+east_data|stem|3a985a693e1b9cc0|92539f3145c8dc04|8c80c45c3b43a3d4|-26071950||t20063.3643314983s|f271421d81d94a83|818|rds|local|vector|||0||
+extract_coordinates_from_zipcode|function|3045c57b5e9d297c|||||||||||||||
+factopca|function|5c112c4ca65a03c4|||||||||||||||
+join_cities_survey|function|67237d95f9cb59ec|||||||||||||||
+join_coord_data|function|448f9c6bbf21db4a|||||||||||||||
+join_data|function|871c4b31e905b3b2|||||||||||||||
+meteo_data|stem|024ad53ac96f5507|e78e1fc125fe033c|abfe70d4f262bfe0|-697645030||t20062.7087184958s|0a2706eaf0b2991e|813|rds|local|vector|||0||
+meteo_path|stem|c5099dd32f3a3f42|5bea5287c580ef2c|2c530c1562a7fbd1|611837328|C:/Users/p05421/Titouan/10. Programmation/R/projet_pastis/data/Meteo.txt|t20062.5342439727s|e07aed41205a3210|1153|file|local|vector|||0.03||
+multivariate_plot|function|88f98725c650c250|||||||||||||||
+north_data|stem|8e6cea0f26e662b9|bbff9c12d6d9ba02|8c80c45c3b43a3d4|-865072972||t20063.3643311678s|2765b81ccae0f006|848|rds|local|vector|||0.02||
+path|stem|c5099dd32f3a3f42|5bea5287c580ef2c|2c530c1562a7fbd1|1488123031|C:/Users/p05421/Titouan/10. Programmation/R/projet_pastis/data/Meteo.txt|t20062.5342439727s|e07aed41205a3210|1153|file|local|vector|||0||
+pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t20062.601400328s|0feaca50c92f12da|6740|rds|local|vector|||1.96||
+pca_meteo_graph|stem|b0591058f113f9bf|62dacc4f4fb8d850|335ae517ec0d2a21|1606173675||t20063.3607243864s|5cc27b29fc6cc288|127755|rds|local|vector|||1.43||
+pivot_data|function|f8b9775231cdbdff|||||||||||||||
+present_data|stem|0c031ee036af9b29|c8dceb2c5bcef173|8c80c45c3b43a3d4|1796563436||t20063.3643305052s|1c70014840bd7a96|734|rds|local|vector|||0.07||
+read_data|function|183d92567ca15f46|||||||||||||||
+select_cities|function|ed070b8c05a6f047|||||||||||||||
+south_data|stem|1d0b94d01d80bb4d|7d9592e49ca8b9c6|8c80c45c3b43a3d4|543313425||t20063.3643318317s|b611596d7f4db2c4|810|rds|local|vector|||0||
+survey_data|stem|e5743dac03590fd0|f1114602e6753a11|abfe70d4f262bfe0|-903631571||t20062.7087187367s|7e2538694ca46b04|1330|rds|local|vector|||0||
+unique_zipcodes|function|c506bf7e6009a58e|||||||||||||||
+west_data|stem|2192e9c05478e9b7|04d13d80662a47cf|8c80c45c3b43a3d4|-2113480544||t20063.3643321707s|98a87310124c0bb8|690|rds|local|vector|||0||
+zipcodes|stem|b5c454bc89fb68a7|08791ef2f1d96c92|310270a05dc33281|382738852||t20062.6973532286s|e020573ec4427202|277|rds|local|vector|||0|NAs introduits lors de la conversion automatique|
