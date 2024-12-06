@@ -1,5 +1,5 @@
 ---
-title: "survey_summary"
+title: "Finding the south in the hearts of french people"
 format: html
 editor: visual
 execute:
@@ -22,3 +22,21 @@ library(targets)
 tar_config_set(store = here::here("outputs", "pipeline"), 
                script = here::here("analyses", "pipeline.R"))
 ```
+
+We then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.
+
+```{r}
+tar_load(pca_survey_graph)
+
+pca_survey_graph
+```
+
+So far, we can see that "*Anonymous1*"'s answer differ greatly from the others, but it's hard to perceive much more from this plot. Let's see how it is on a map of France!
+
+```{r}
+tar_load(pca_map_survey)
+
+pca_map_survey
+```
+
+If we compare everyone's answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south! 

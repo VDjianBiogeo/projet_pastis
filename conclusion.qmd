@@ -1,1 +1,25 @@
+---
+title: "The end of the adventure"
+format: html
+editor: visual
+execute:
+  echo: false
+  error: true
+  warning: false
+---
 
+## Conclusion
+
+In the end, what did we learn from this project? That the south starts below Lyon? And that people who think that the north starts above Nîmes are liars (kisses to our Côte d'Azur friends)?
+
+No, what really mattered in this project is all we learned on project management and data analysis. We learned how to use amazing tools to manage our progress, share our codes and ideas, and allow everyone to have access to it. And for that, some thanks are in order.
+
+First, we would like to thank François, Nicolas, Iago and Aurélie for their amazing teachings. We can't speak for all of our colleagues, but we're pretty sure that the feeling is shared. Your commitment to your talks gave life to this formation, and we have learned a lot this last week.
+
+We would also like everyone for their participation in this little project. Thank you for humoring us and our silly ideas.
+
+And finally, we would like to thank all lost souls that ended up on this website and took some of their time to read about our project.
+
+Cheers!
+
+The PASTIS team ![](/illustrations/emoji_pastis.png){width="26"}

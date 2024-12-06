@@ -1,7 +1,7 @@
 ---
 title: "Pastis project"
 author: "Philippine Morlot, Titouan Dionet, Valentin Djian"
-date: "`r format(Sys.time(), '%Y/%m/%d')`"
+date: "06/12/2024"
 format:
   html:
     self_contained: true

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "survey_summary.html",
+    "href": "survey_summary.html",
+    "title": "3  Finding the south in the hearts of french people",
+    "section": "",
+    "text": "3.1 How people perceive the South\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\nWe then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.\nSo far, we can see that “Anonymous1”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!\nIf we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
+    ]
+  },
+  {
+    "objectID": "survey_summary.html#how-people-perceive-the-south",
+    "href": "survey_summary.html#how-people-perceive-the-south",
+    "title": "3  Finding the south in the hearts of french people",
+    "section": "",
+    "text": "Their childhood town\nThe town where they currently live\nWhich town is the first to be considered in the south\nTheir chilliness (because why not?)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
+    ]
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "4  The end of the adventure",
+    "section": "",
+    "text": "4.1 Conclusion\nIn the end, what did we learn from this project? That the south starts below Lyon? And that people who think that the north starts above Nîmes are liars (kisses to our Côte d’Azur friends)?\nNo, what really mattered in this project is all we learned on project management and data analysis. We learned how to use amazing tools to manage our progress, share our codes and ideas, and allow everyone to have access to it. And for that, some thanks are in order.\nFirst, we would like to thank François, Nicolas, Iago and Aurélie for their amazing teachings. We can’t speak for all of our colleagues, but we’re pretty sure that the feeling is shared. Your commitment to your talks gave life to this formation, and we have learned a lot this last week.\nWe would also like everyone for their participation in this little project. Thank you for humoring us and our silly ideas.\nAnd finally, we would like to thank all lost souls that ended up on this website and took some of their time to read about our project.\nCheers!\nThe PASTIS team",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The end of the adventure</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project PASTIS",
+    "section": "",
+    "text": "Pastis project",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pastis project</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Project PASTIS",
+    "section": "0.1 Introduction",
+    "text": "0.1 Introduction\nThe Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the “south of France”. Through a survey, we collect data from participants who provide :\n\ntheir childhood city and their current city of residence ;\ntheir personal view of the boundaries of the south, north, east, and west on a map ;\ntheir sensitivity to cold (on a scale from 1 to 5, where 1 means “not sensitive to cold” and 5 means “very sensitive to cold”).\n\nBy cross-referencing this data, our project seeks to answer intriguing questions:\n\nWhere are the four cardinal points located according to climatic data ?\nWhere do the French really place the “south of France” ?\nDoes this perception vary depending on their geographical origin or current place of residence ?\nIs there a connection between perceived sensitivity to cold and the location of the south as identified by respondents ?\n\nThe Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the “south” for each individual. 🍹",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pastis project</span>"
+    ]
+  },
+  {
+    "objectID": "meteo_summary.html",
+    "href": "meteo_summary.html",
+    "title": "2  Defining an objective south",
+    "section": "",
+    "text": "2.1 Finding the South using temperature\nFinding a good criteria to actually identify the south of our beautiful and diverse country can be quite a conondrum. Do we base ourselves on climate? On the landscape? Or maybe based on changes in floral composition?\nFor simplicity’s sake (and our own), we chose something rather simple, and yet reflecting the main difference between the north and the south: differences in seasonal temperature for several french cities.\nVille\nJanvier\nFevrier\nMars\nAvril\nMai\nJuin\nJuillet\nAout\nSeptembre\nOctobre\nNovembre\nDecembre\n\n\n\n\nBordeaux\n5.6\n6.6\n10.3\n12.8\n15.8\n19.3\n20.9\n21.0\n18.6\n13.8\n9.1\n6.2\n\n\nBrest\n6.1\n5.8\n7.8\n9.2\n11.6\n14.4\n15.6\n16.0\n14.7\n12.0\n9.0\n7.0\n\n\nClermont\n2.6\n3.7\n7.5\n10.3\n13.8\n17.3\n19.4\n19.1\n16.2\n11.2\n6.6\n3.6\n\n\nGrenoble\n1.5\n3.2\n7.7\n10.6\n14.5\n17.8\n20.1\n19.5\n16.7\n11.4\n6.5\n2.3\n\n\nLille\n2.4\n2.9\n6.0\n8.9\n12.4\n15.3\n17.1\n17.1\n14.7\n10.4\n6.1\n3.5\n\n\nLyon\n2.1\n3.3\n7.7\n10.9\n14.9\n18.5\n20.7\n20.1\n16.9\n11.4\n6.7\n3.1\nUsing these temperature data, we should be able to identify which towns show similar monthly temperatures and which ones are radically different. For this, we will use a Principal Component Analysis (or PCA for short).\nIt ordinates individuals (observations, french towns in our case) depending on observed values for quantitative variables (here, temperature for each month). As such, individuals with similar values for studied variables will be close to each other, whereas individuals with different values will be far from each other. Without further ado, let’s look at the PCA results on our french towns:\nIf we look closely, towns are split on the first axis, with northern cities such as Lille, Brest or Strasbourg on the left side of the first axis, and with southern cities such as Marseille, Montpellier and Nice on the right side of the axis. But we can see two cities that are in the middle of this axis: Lyon and Nantes. Could it be that the “south” we so desperatly searched for is below the line traced between Nantes and Lyon? Let’s map the PCA’s first axis coordinates on a map of France!\nWell, seems like we were onto something! We can see that we are considered in the south when we go past Lyon and reach Bordeaux. But do people agree with this?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Defining an objective south</span>"
+    ]
+  },
+  {
+    "objectID": "meteo_summary.html#finding-the-south-using-temperature",
+    "href": "meteo_summary.html#finding-the-south-using-temperature",
+    "title": "2  Defining an objective south",
+    "section": "",
+    "text": "Here’s an example of a PCA",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Defining an objective south</span>"
+    ]
+  }
+]
