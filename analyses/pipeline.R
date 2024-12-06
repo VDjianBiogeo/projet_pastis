@@ -78,12 +78,36 @@ list(
              command = factopca(coord_data[,c(1, grep(pattern = "_north", x = colnames(coord_data)))], "id")),
   ### Plot graph
   tar_target(name = pca_survey_graph_north,
-             command = multivariate_plot(pca_survey_north))
+             command = multivariate_plot(pca_survey_north)),
   
   ### Map PCA values on France
-  # tar_target(name = pca_map_survey_north,
-  #            command =  mapping_survey_pca(pca_survey_north)),
-  # 
+  tar_target(name = pca_map_survey_north,
+             command =  mapping_survey_pca(pca_survey_north)),
+  
+  ## Where is the East ? ----
+  ### Make a PCA
+  tar_target(name = pca_survey_east,
+             command = factopca(coord_data[,c(1, grep(pattern = "_east", x = colnames(coord_data)))], "id")),
+  ### Plot graph
+  tar_target(name = pca_survey_graph_east,
+             command = multivariate_plot(pca_survey_east)),
+  
+  ### Map PCA values on France
+  tar_target(name = pca_map_survey_east,
+             command =  mapping_survey_pca(pca_survey_east)),
+  
+  ## Where is the West ? ----
+  ### Make a PCA
+  tar_target(name = pca_survey_west,
+             command = factopca(coord_data[,c(1, grep(pattern = "_west", x = colnames(coord_data)))], "id")),
+  ### Plot graph
+  tar_target(name = pca_survey_graph_west,
+             command = multivariate_plot(pca_survey_west)),
+  
+  ### Map PCA values on France
+  tar_target(name = pca_map_survey_west,
+             command =  mapping_survey_pca(pca_survey_west))
+
   # ## Render Quarto documents ----
   # tarchetypes::tar_quarto(name = index_quarto,
   #                         path = "index.qmd")
