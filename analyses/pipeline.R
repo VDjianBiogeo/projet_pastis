@@ -42,6 +42,8 @@ list(
   tar_target(name = west_data,      command = join_cities_survey(cities_data = cities_data_extract, survey_data = survey_data, type = "west")),
   
   ### Create a joined data with all informations
-  tar_target(name = coord_data, command = join_coord_data(data_list = list(childhood_data, present_data, south_data, north_data, east_data, west_data), col_id = "id"))
-
+  tar_target(name = coord_data, command = join_coord_data(data_list = list(childhood_data, present_data, south_data, north_data, east_data, west_data), col_id = "id")),
+  
+  ### Transform data
+  tar_target(name = coord_data_long, command = pivot_data(data = coord_data))
 )

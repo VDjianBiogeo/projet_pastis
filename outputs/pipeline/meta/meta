@@ -3,6 +3,7 @@ childhood_data|stem|691d02b16e65f10c|307405714956ddab|8c80c45c3b43a3d4|946005615
 cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|abfe70d4f262bfe0|211886505||t20062.7087177203s|13f8890f4153f827|1188294|rds|local|vector|||0.22||
 cities_data_extract|stem|a5b8d992627c1691|c4bf259d013df920|df3ca3028a0794e7|-1716341917||t20062.6744321521s|60630c5b904a09cb|8462|rds|local|vector|||0.01||
 coord_data|stem|dcbe3de9a3370cd1|9d423c913d0df450|0fa47f9a06bc5140|-1704648936||t20063.3701190265s|f29db5e42908fbbf|2644|rds|local|vector|||0.01||
+coord_data_long|stem|26292e8a50f78228|73d010cdec7af31f|d34ecb8fbc84d90d|553160998||t20063.3864635992s|5565ebcffd4e98f9|2622|rds|local|vector|||0.03||
 east_data|stem|3a985a693e1b9cc0|92539f3145c8dc04|8c80c45c3b43a3d4|-26071950||t20063.3643314983s|f271421d81d94a83|818|rds|local|vector|||0||
 extract_coordinates_from_zipcode|function|3045c57b5e9d297c|||||||||||||||
 factopca|function|5c112c4ca65a03c4|||||||||||||||
@@ -16,6 +17,7 @@ north_data|stem|8e6cea0f26e662b9|bbff9c12d6d9ba02|8c80c45c3b43a3d4|-865072972||t
 path|stem|c5099dd32f3a3f42|5bea5287c580ef2c|2c530c1562a7fbd1|1488123031|C:/Users/p05421/Titouan/10. Programmation/R/projet_pastis/data/Meteo.txt|t20062.5342439727s|e07aed41205a3210|1153|file|local|vector|||0||
 pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t20062.601400328s|0feaca50c92f12da|6740|rds|local|vector|||1.96||
 pca_meteo_graph|stem|b0591058f113f9bf|62dacc4f4fb8d850|335ae517ec0d2a21|1606173675||t20063.3607243864s|5cc27b29fc6cc288|127755|rds|local|vector|||1.43||
+pivot_data|function|04f62b560c875161|||||||||||||||
 present_data|stem|0c031ee036af9b29|c8dceb2c5bcef173|8c80c45c3b43a3d4|1796563436||t20063.3643305052s|1c70014840bd7a96|734|rds|local|vector|||0.07||
 read_data|function|183d92567ca15f46|||||||||||||||
 select_cities|function|ed070b8c05a6f047|||||||||||||||

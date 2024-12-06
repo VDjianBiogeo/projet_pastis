@@ -80,7 +80,7 @@ join_cities_survey = function(cities_data, survey_data, type) {
 
 ################################ 
 
-#' @title Extract cities coordinates from zip codes
+#' @title Join data on id
 #' 
 #' @description
 #' This function extract cities coordinates from a given dataset from given zip codes.
@@ -101,3 +101,28 @@ join_coord_data = function(data_list, col_id) {
   
   return(joined_data)
 }
+
+################################ 
+
+#' @title Gather data
+#' 
+#' @description
+#' This function extract cities coordinates from a given dataset from given zip codes.
+#' 
+#' @param data Data
+#' 
+#' @export
+#'
+
+pivot_data = function(data) {
+  # Transformation
+  data_long = data |> 
+    tidyr::pivot_longer(
+      cols = -id, # All columns except `id`
+      names_to = c(".value", "location"), # Create columns for each type of data
+      names_sep = "_" # Separator
+    ) |> as.data.frame()
+  
+  return(data_long)
+}
+

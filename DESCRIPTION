@@ -22,4 +22,5 @@ Imports:
     stats,
     stringr,
     tarchetypes,
-    targets
+    targets,
+    tidyr
