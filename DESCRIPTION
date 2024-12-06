@@ -25,7 +25,4 @@ Imports:
     sf,
     stats,
     stringr,
-    tarchetypes,
-    targets,
     tidyr
-
