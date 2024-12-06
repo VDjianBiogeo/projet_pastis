@@ -9,7 +9,7 @@ book:
   
   page-footer: 
     left: "Made with [FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/)"
-    center: "Code source available on [{{< fa brands github >}}](https://github.com/VDjianBiogeo/projet_pastis/tree/dev)"
+    center: "Code source available on [Github](https://github.com/VDjianBiogeo/projet_pastis/tree/dev)"
     right: "Built with [Quarto](https://quarto.org/)"
     border: true
     
