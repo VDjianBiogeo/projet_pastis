@@ -1,7 +1,7 @@
 ---
 title: "Pastis project"
 author: "Philippine Morlot, Titouan Dionet, Valentin Djian"
-date: "06/12/2024"
+date: "12/06/2024"
 format:
   html:
     self_contained: true
@@ -14,9 +14,7 @@ execute:
   error: true
 ---
 
-# Pastis project
-
-![](illustrations/emoji_pastis.png){width="26"}
+# Pastis project ![](illustrations/emoji_pastis.png){width="26"}
 
 ## Introduction
 
