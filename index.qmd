@@ -18,10 +18,6 @@ execute:
 
 ## Introduction
 
-=======
-# Pastis project ![](/illustrations/emoji_pastis.png){width="26"} {.unnumbered}
-
->>>>>>> 0e35f116f13cfc473c2c9a075a6e3f08519158e9
 The Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the "south of France". Through a survey, we collect data from participants who provide :
 
 -   their childhood city and their current city of residence ;
@@ -31,6 +27,8 @@ The Pastis project aims to explore the geographical and subjective perceptions o
 -   their sensitivity to cold (on a scale from 1 to 5, where 1 means "not sensitive to cold" and 5 means "very sensitive to cold").
 
 By cross-referencing this data, our project seeks to answer intriguing questions:
+
+-   Where are the four cardinal points located according to climatic data ?
 
 -   Where do the French really place the "south of France" ?
 
