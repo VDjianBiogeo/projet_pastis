@@ -11,7 +11,7 @@
 #' @return a ggplot2 object
 #' @import ggplot2
 
-mappin_survey_pca <- function(pca_data){
+mapping_survey_pca <- function(pca_data){
   
   library(ggplot2)
   
@@ -27,8 +27,8 @@ mappin_survey_pca <- function(pca_data){
   
   map <- ggplot() +
     geom_sf(data = sf::st_as_sf(france)) +
-    geom_hline(yintercept = 45.18221, linetype = 3,
-               color ='orange', linewidth = 2) +
+    geom_hline(yintercept = 45.18221, linetype = 2,
+               color ='orange', linewidth = 1.5) +
     geom_point(aes(x = longitude_south,
                    y = latitude_south),
                pch = 23, fill = "orange",

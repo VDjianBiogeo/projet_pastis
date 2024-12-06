@@ -73,6 +73,6 @@ list(
              command =  mapping_survey_pca(pca_survey)),
   
   ### Render Quarto documents
-  tarchetypes::tar_quarto(name = index_quarto, 
+  tarchetypes::tar_quarto(name = index_quarto,
                           path = "meteo_summary.qmd")
 )
