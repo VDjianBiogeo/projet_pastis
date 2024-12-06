@@ -1,0 +1,18 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+join_cities_survey|function|67237d95f9cb59ec
+join_coord_data|function|448f9c6bbf21db4a
+mapping_pca|function|1340aebdd1aa9301
+multivariate_plot|function|88f98725c650c250
+pivot_data|function|f8b9775231cdbdff
+factopca|function|5c112c4ca65a03c4
+extract_coordinates_from_zipcode|function|3045c57b5e9d297c
+unique_zipcodes|function|c506bf7e6009a58e
+read_data|function|183d92567ca15f46
+cities_data|stem|629f999670f51f9b|6ab9aecabc504a34|abfe70d4f262bfe0|211886505||t20063.4044542379s|13f8890f4153f827|1188294|rds|local|vector|||0.29||
+survey_data|stem|e5743dac03590fd0|f1114602e6753a11|abfe70d4f262bfe0|-903631571||t20063.4044615349s|7e2538694ca46b04|1330|rds|local|vector|||0.56||
+meteo_data|stem|024ad53ac96f5507|e78e1fc125fe033c|abfe70d4f262bfe0|-697645030||t20063.4044617515s|0a2706eaf0b2991e|813|rds|local|vector|||0||
+zipcodes|stem|b5c454bc89fb68a7|08791ef2f1d96c92|310270a05dc33281|382738852||t20063.4044621211s|e020573ec4427202|277|rds|local|vector|||0|NAs introduits lors de la conversion automatique|
+pca_meteo|stem|fcdad76ec8636a73|83c2fb40d6d57e5d|90bfd76b97534b0f|-2096422410||t20063.4044880995s|0feaca50c92f12da|6740|rds|local|vector|||2.23||
+cities_data_extract|stem|a5b8d992627c1691|c4bf259d013df920|df3ca3028a0794e7|-1716341917||t20063.4044884719s|60630c5b904a09cb|8462|rds|local|vector|||0||
+pca_meteo_graph|stem|b0591058f113f9bf|62dacc4f4fb8d850|335ae517ec0d2a21|1606173675||t20063.4045053065s|5cc27b29fc6cc288|127755|rds|local|vector|||1.39||
+pca_map|stem||ee75bb33a12a5b96|f108fbc0eca41b07|713036061||t20063.4045063331s||0|rds|local|vector|||0.03||aucun package nommé tmap nest trouvé

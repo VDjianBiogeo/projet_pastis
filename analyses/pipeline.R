@@ -19,8 +19,7 @@ list(
   tar_target(name = pca_meteo_graph,
              command = multivariate_plot(pca_meteo)),
   
-  ## Map PCA values on France
-  
+  ### Map PCA values on France
   tar_target(name = pca_map,
              command =  mapping_pca(pca_meteo)),
   
