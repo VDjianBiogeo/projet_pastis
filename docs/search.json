@@ -44,9 +44,9 @@
     "href": "survey_summary.html",
     "title": "3  Finding the south in the hearts of french people",
     "section": "",
-    "text": "3.1 How people perceive the South\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\nWe then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.\nError: objet 'pca_survey_graph_south' introuvable\nSo far, we can see that “Anonymous1”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!\nError: objet 'pca_map_survey_south' introuvable\nIf we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!",
+    "text": "3.1 How people perceive the South\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\nWe then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.\nSo far, we can see that “Anonymous1”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!\nIf we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>`r paste('Finding the', params$cardinal_point, 'in the hearts of french people')`</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
     ]
   },
   {
@@ -56,7 +56,7 @@
     "section": "",
     "text": "Their childhood town\nThe town where they currently live\nWhich town is the first to be considered in the south\nTheir chilliness (because why not?)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>`r paste('Finding the', params$cardinal_point, 'in the hearts of french people')`</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
     ]
   },
   {

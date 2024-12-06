@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./survey_summary.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><code>r paste('Finding the', params$cardinal_point, 'in the hearts of french people')</code></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./survey_summary.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Finding the south in the hearts of french people</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./survey_summary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><code>r paste('Finding the', params$cardinal_point, 'in the hearts of french people')</code></span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Finding the south in the hearts of french people</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,14 +177,22 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>We then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.</p>
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error: objet 'pca_survey_graph_south' introuvable</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="survey_summary_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>So far, we can see that “<em>Anonymous1</em>”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!</p>
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error: objet 'pca_map_survey_south' introuvable</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="survey_summary_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>If we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!</p>

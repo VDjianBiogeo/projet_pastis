@@ -2,8 +2,6 @@
 title: "Finding the south in the hearts of french people"
 format: html
 editor: visual
-params: 
-  cardinal_point: "south"
 execute:
   echo: false
   error: true
