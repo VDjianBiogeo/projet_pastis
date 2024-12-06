@@ -8,13 +8,15 @@ format:
     fig_caption: yes
     toc: true
     toc_float:
-      collapsed: true
+    collapsed: true
 execute:
   echo: false
   error: true
 ---
 
-# Pastis project ![](/illustrations/emoji_pastis.png){width="26"} {.unnumbered}
+# Pastis project
+
+![](illustrations/emoji_pastis.png){width="26"}
 
 ## Introduction
 
@@ -36,4 +38,14 @@ By cross-referencing this data, our project seeks to answer intriguing questions
 
 -   Is there a connection between perceived sensitivity to cold and the location of the south as identified by respondents ?
 
-The Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the "south" for each individual. 🍹
+The Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the "south" for each individual.
+
+<br />
+
+<!-- ::: container -->
+
+<iframe class="responsive-iframe" src="https://github.com/philou11/pastis-presentation">
+
+</iframe>
+
+<!-- ::: -->
