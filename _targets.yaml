@@ -1,3 +1,5 @@
 main:
-  script: C:/Users/p05421/Titouan/10. Programmation/R/projet_pastis/analyses/pipeline.R
-  store: C:/Users/p05421/Titouan/10. Programmation/R/projet_pastis/outputs/pipeline
+  script: C:/Users/valen/Dropbox/Thèse régionalisation subantarctique/Formations/CESAB/Cours
+    et codes/projet_pastis/projet_pastis/analyses/pipeline.R
+  store: C:/Users/valen/Dropbox/Thèse régionalisation subantarctique/Formations/CESAB/Cours
+    et codes/projet_pastis/projet_pastis/outputs/pipeline

@@ -1,0 +1,15 @@
+{
+  "hash": "66df2537adfd6a5ad947884e7cee6bd9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"`Where do the french place the south of France?\"\nformat: html\neditor: visual\nexecute:\n  echo: false\n  error: true\n  warning: false\nparams:\n  cardinal_point: \"south\"\n---\n\n\n\n\n\n\n\n\n## How people perceive the South\n\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\n\n-   Their childhood town\n-   The town where they currently live\n-   Which town is the first to be considered in the south\n-   Their chilliness (because why not?)\n\n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

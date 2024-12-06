@@ -69,5 +69,9 @@ list(
   
   ### Map PCA values on France
   tar_target(name = pca_map_survey,
-             command =  mapping_pca(pca_survey))
+             command =  mapping_survey_pca(pca_survey)),
+  
+  ### Render Quarto documents
+  tarchetypes::tar_quarto(name = index_quarto, 
+                          path = "meteo_summary.qmd")
 )

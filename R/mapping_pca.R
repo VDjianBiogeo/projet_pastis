@@ -9,7 +9,7 @@
 #' @export
 #' 
 #' @return a ggplot2 object
-#' @import ggpot2
+#' @import ggplot2
 #' 
 
 mapping_pca <- function(pca_data){
