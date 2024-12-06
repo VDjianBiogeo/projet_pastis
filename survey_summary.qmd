@@ -1,9 +1,9 @@
 ---
-title: "`r paste('Finding the', params$cardinal_point, 'in the hearts of french people')`"
+title: "Finding the south in the hearts of french people"
 format: html
 editor: visual
 params: 
-  cardinal_point: "_south"
+  cardinal_point: "south"
 execute:
   echo: false
   error: true

@@ -13,4 +13,5 @@ targets::tar_make()
 ## Post visualisation ----
 targets::tar_visnetwork()
 
-quarto::quarto_render(input = here::here("index.qmd"))
+quarto::quarto_render(input = here::here("index.qmd"),
+                      execute_params = list(cardinal_point = "south"))
