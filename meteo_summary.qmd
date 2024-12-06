@@ -45,4 +45,5 @@ tar_load(pca_map)
 
 pca_map
 ```
-Well, seems like we were onto something! We can see that we are considered in the south when we go past Lyon and reach Bordeaux. But do people agree with this?
+
+Well, seems like we were onto something! We can see that we are considered in the south when we go past **Lyon** and reach **Bordeaux**. But do people agree with this?
