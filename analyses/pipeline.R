@@ -60,6 +60,7 @@ list(
                                                        names = "location", 
                                                        values = c("latitude", "longitude"))),
   
+  ## Where is the South ? ----
   ### Make a PCA
   tar_target(name = pca_survey,
              command = factopca(coord_data[,c(1, grep(pattern = "_south", x = colnames(coord_data)))], "id")),
