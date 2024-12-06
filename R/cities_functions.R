@@ -41,7 +41,7 @@ extract_coordinates_from_zipcode = function(data, zipcode_col_name, zipcodes_vec
 
 ################################ 
 
-#' @title Extract cities coordinates from zip codes
+#' @title Join cities and survey data
 #' 
 #' @description
 #' This function extract cities coordinates from a given dataset from given zip codes.
@@ -53,7 +53,7 @@ extract_coordinates_from_zipcode = function(data, zipcode_col_name, zipcodes_vec
 #' @export
 #' 
 
-join_data = function(cities_data, survey_data, type) {
+join_cities_survey = function(cities_data, survey_data, type) {
   # Cities data
   cities_data_sub = subset(x = cities_data, select = c(city_code, zip_code, latitude, longitude))
   cities_data_sub$city_code = stringr::str_replace_all(string = cities_data_sub$city_code, pattern = " 01", replacement = "")
@@ -64,7 +64,7 @@ join_data = function(cities_data, survey_data, type) {
   select_colums = c("name", town_var, code_var)
   data = subset(x = survey_data, select = select_colums)
   
-  colnames(data) = c("name", "town", "zipcode")
+  colnames(data) = c("id", "town", "zipcode")
   data$town = tolower(data$town)
   
   # Joined data
@@ -73,7 +73,31 @@ join_data = function(cities_data, survey_data, type) {
                                   relationship = "many-to-many") |>
     unique()
   
-  colnames(joined_data) = c("name", paste(colnames(joined_data)[-1], type, sep = "_"))
+  colnames(joined_data) = c("id", paste(colnames(joined_data)[-1], type, sep = "_"))
+  
+  return(joined_data)
+}
+
+################################ 
+
+#' @title Extract cities coordinates from zip codes
+#' 
+#' @description
+#' This function extract cities coordinates from a given dataset from given zip codes.
+#' 
+#' @param data_list List of datasets to merge on a specific column.
+#' @param col_id Name of the key column.
+#' 
+#' @export
+#' 
+
+join_coord_data = function(data_list, col_id) {
+  len = length(data_list)
+  joined_data = data_list[[1]]
+  
+  for (i in 2:len) {
+    joined_data = dplyr::left_join(x = joined_data, y = data_list[[i]], by = col_id)
+  }
   
   return(joined_data)
 }
