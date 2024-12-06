@@ -2,4 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-output/pipeline
+outputs/pipeline/
