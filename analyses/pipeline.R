@@ -58,5 +58,16 @@ list(
   tar_target(name = coord_data, command = pivot_data_w(data = coord_data_long, 
                                                        col_to_keep = c("id", "location", "latitude", "longitude"), 
                                                        names = "location", 
-                                                       values = c("latitude", "longitude")))
+                                                       values = c("latitude", "longitude"))),
+  
+  ### Make a PCA
+  tar_target(name = pca_survey,
+             command = factopca(coord_data[,c(1, grep(pattern = "_south", x = colnames(coord_data)))], "id")),
+  ### Plot graph
+  tar_target(name = pca_survey_graph,
+             command = multivariate_plot(pca_survey)),
+  
+  ### Map PCA values on France
+  tar_target(name = pca_map_survey,
+             command =  mapping_pca(pca_survey))
 )
