@@ -104,21 +104,23 @@ join_coord_data = function(data_list, col_id) {
 
 ################################ 
 
-#' @title Gather data
+#' @title Pivot coordinates data in a longer shape.
 #' 
 #' @description
-#' This function extract cities coordinates from a given dataset from given zip codes.
+#' This function pivot the coordinates data in a longer shape. A key column 
+#' must be set.
 #' 
-#' @param data Data
+#' @param data Coordinates data.
+#' @param col_id Name of the key column.
 #' 
 #' @export
 #'
 
-pivot_data = function(data) {
+pivot_data = function(data, col_id) {
   # Transformation
   data_long = data |> 
     tidyr::pivot_longer(
-      cols = -id, # All columns except `id`
+      cols = -all_of(col_id), # All columns except `id`
       names_to = c(".value", "location"), # Create columns for each type of data
       names_sep = "_" # Separator
     ) |> as.data.frame()

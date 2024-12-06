@@ -45,5 +45,5 @@ list(
   tar_target(name = coord_data, command = join_coord_data(data_list = list(childhood_data, present_data, south_data, north_data, east_data, west_data), col_id = "id")),
   
   ### Transform data
-  tar_target(name = coord_data_long, command = pivot_data(data = coord_data))
+  tar_target(name = coord_data_long, command = pivot_data(data = coord_data, col_id = "id"))
 )
