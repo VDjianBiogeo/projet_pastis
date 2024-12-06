@@ -17,10 +17,11 @@
 plot_coord = function(data) {
   library(ggplot2)
   
-  ggplot(data = data) +
+  PLOT = ggplot(data = data) +
     coord_cartesian(ylim = c(40, 55)) +
     aes(x = location, y = latitude) +
     geom_boxplot() +
     theme_bw()
   
+  return(PLOT)
 }
