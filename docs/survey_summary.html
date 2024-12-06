@@ -175,6 +175,27 @@ ul.task-list li input[type="checkbox"] {
 <li>Which town is the first to be considered in the south</li>
 <li>Their chilliness (because why not?)</li>
 </ul>
+<p>We then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="survey_summary_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>So far, we can see that “<em>Anonymous1</em>”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="survey_summary_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!</p>
 
 
 </section>
