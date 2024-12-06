@@ -23,16 +23,15 @@ This project is structured as follow:
 |     └─ gadm41_FRA_1_pk.rds                  # France
 |
 ├─ R/                                         # Contains R functions (only)
-|  ├─ count_ecoregions.R                      # Function to count ecoregions per species
-|  ├─ dl_wildfinder_data.R                    # Function to download WildFinder data
-|  ├─ dl_pantheria_data.R                     # Function to download PanTHERIA data
-|  ├─ join_tables.R                           # Function to merge WildFinder tables
-|  ├─ plot_counts.R                           # Function to make the barplot
-|  ├─ read_data.R                             # Function to import WildFinder tables
-|  └─ select_species.R                        # Function to subset WildFinder species
+|  ├─ cities_functions.R                      # Function 
+|  ├─ factopca.R                              # Function
+|  ├─ mapping_pca.R                           # Function
+|  ├─ mapping_survey_pca.R                    # Function
+|  ├─ multivariate_plot.R                     # Function
+|  └─ read_data.R                             # Function
 |
 ├─ analyses/                                  # Contains R scripts
-|  └─ download-data.R                         # Script to download raw data
+|  └─ pipeline.R                              # Targets pipeline
 |
 ├─ index.qmd                                  # Quarto report
 ├─ index.html                                 # Quarto result (html page)
