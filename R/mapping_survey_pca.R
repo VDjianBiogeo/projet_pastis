@@ -29,13 +29,13 @@ mapping_survey_pca <- function(pca_data){
     geom_sf(data = sf::st_as_sf(france)) +
     geom_hline(yintercept = 45.18221, linetype = 2,
                color ='orange', linewidth = 1.5) +
-    geom_point(aes(x = longitude_south,
-                   y = latitude_south),
+    geom_point(aes(x = "longitude_north",
+                   y = "latitude_north"),
                pch = 23, fill = "orange",
                color = 'black', size = 4,
                data = row_coord) +
-    ggrepel::geom_label_repel(aes(x = longitude_south,
-                                  y = latitude_south,
+    ggrepel::geom_label_repel(aes(x = "longitude_north",
+                                  y = "latitude_north",
                                   label = rownames(row_coord)),
                               data = row_coord) +
     scale_fill_viridis_c() +

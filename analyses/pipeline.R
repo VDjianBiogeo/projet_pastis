@@ -62,17 +62,29 @@ list(
   
   ## Where is the South ? ----
   ### Make a PCA
-  tar_target(name = pca_survey,
+  tar_target(name = pca_survey_south,
              command = factopca(coord_data[,c(1, grep(pattern = "_south", x = colnames(coord_data)))], "id")),
   ### Plot graph
-  tar_target(name = pca_survey_graph,
-             command = multivariate_plot(pca_survey)),
+  tar_target(name = pca_survey_graph_south,
+             command = multivariate_plot(pca_survey_south)),
   
   ### Map PCA values on France
-  tar_target(name = pca_map_survey,
-             command =  mapping_survey_pca(pca_survey)),
+  tar_target(name = pca_map_survey_south,
+             command =  mapping_survey_pca(pca_survey_south)),
   
-  ### Render Quarto documents
-  tarchetypes::tar_quarto(name = index_quarto,
-                          path = "meteo_summary.qmd")
+  ## Where is the North ? ----
+  ### Make a PCA
+  tar_target(name = pca_survey_north,
+             command = factopca(coord_data[,c(1, grep(pattern = "_north", x = colnames(coord_data)))], "id")),
+  ### Plot graph
+  tar_target(name = pca_survey_graph_north,
+             command = multivariate_plot(pca_survey_north))
+  
+  ### Map PCA values on France
+  # tar_target(name = pca_map_survey_north,
+  #            command =  mapping_survey_pca(pca_survey_north)),
+  # 
+  # ## Render Quarto documents ----
+  # tarchetypes::tar_quarto(name = index_quarto,
+  #                         path = "index.qmd")
 )
