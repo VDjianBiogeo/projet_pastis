@@ -1,16 +1,24 @@
 ---
-title: "`r paste('Where do the French really place the', params$cardinal_point, 'of France ?')`"
-author: "Philippine Morlot, Titouan Dionet, Valentin Djian"
-date: "`r format(Sys.time(), '%Y/%m/%d')`"
-format:
-  html:
-    self_contained: true
-    fig_caption: yes
-    toc: true
-    toc_float:
-      collapsed: true
-params: 
-  cardinal_point: ""
+title: "survey_summary"
+format: html
+editor: visual
 execute:
   echo: false
+  error: true
+  warning: false
 ---
+
+## How people perceive the South
+
+To answer the question, we asked our dear friends from the CESAB to give us information on:
+
+-   Their childhood town
+-   The town where they currently live
+-   Which town is the first to be considered in the south
+-   Their chilliness (because why not?)
+
+```{r}
+library(targets)
+tar_config_set(store = here::here("outputs", "pipeline"), 
+               script = here::here("analyses", "pipeline.R"))
+```
