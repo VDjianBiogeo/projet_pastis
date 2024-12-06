@@ -1,0 +1,16 @@
+---
+title: "`r paste('Where do the French really place the', params$cardinal_point, 'of France ?')`"
+author: "Philippine Morlot, Titouan Dionet, Valentin Djian"
+date: "`r format(Sys.time(), '%Y/%m/%d')`"
+format:
+  html:
+    self_contained: true
+    fig_caption: yes
+    toc: true
+    toc_float:
+      collapsed: true
+params: 
+  cardinal_point: ""
+execute:
+  echo: false
+---

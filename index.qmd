@@ -1,5 +1,27 @@
+<<<<<<< HEAD
+---
+title: "Pastis project"
+author: "Philippine Morlot, Titouan Dionet, Valentin Djian"
+date: "`r format(Sys.time(), '%Y/%m/%d')`"
+format:
+  html:
+    self_contained: true
+    fig_caption: yes
+    toc: true
+    toc_float:
+      collapsed: true
+execute:
+  echo: false
+---
+
 # Pastis project ![](/illustrations/emoji_pastis.png){width="26"} {.unnumbered}
 
+## Introduction
+
+=======
+# Pastis project ![](/illustrations/emoji_pastis.png){width="26"} {.unnumbered}
+
+>>>>>>> 0e35f116f13cfc473c2c9a075a6e3f08519158e9
 The Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the "south of France". Through a survey, we collect data from participants who provide :
 
 -   their childhood city and their current city of residence ;

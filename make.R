@@ -1,12 +1,14 @@
 # Setup ----
 
 ## Load package and function ----
-library(targets)
 targets::tar_config_set(store = here::here("outputs", "pipeline"),
                         script = here::here("analyses", "pipeline.R"))
+
+## Pre visualisation ----
+targets::tar_visnetwork()
 
 ## Launch pipeline ----
 targets::tar_make()
 
-## Visualisation ----
+## Post visualisation ----
 targets::tar_visnetwork()
