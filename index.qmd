@@ -27,6 +27,8 @@ The Pastis project aims to explore the geographical and subjective perceptions o
 
 By cross-referencing this data, our project seeks to answer intriguing questions:
 
+-   Where are the four cardinal points located according to climatic data ?
+
 -   Where do the French really place the "south of France" ?
 
 -   Does this perception vary depending on their geographical origin or current place of residence ?

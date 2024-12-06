@@ -2,6 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+/outputs/pipeline/
 /.quarto/
-output/pipeline
-
+Rplots.pdf
