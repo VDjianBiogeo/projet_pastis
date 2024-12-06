@@ -2,9 +2,11 @@
 #' @description
 #' This function executes a PCA on a given dataframe.
 #' 
+#' @param data a dataframe with quantitative values
+#' @param col_rownames a column name of qualitative values to use as rownames
 #' 
-#' 
-#' 
+#' @export
+#' @return a FactoMineR PCA object
 
 factopca <- function(data, col_rownames){
   

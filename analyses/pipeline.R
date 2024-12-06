@@ -20,6 +20,11 @@ list(
   tar_target(name = pca_meteo_graph,
              command = multivariate_plot(pca_meteo)),
   
+  ## Map PCA values on France
+  
+  tar_target(name = pca_map,
+             command =  mapping_pca(pca_meteo)),
+  
   ## Survey and Cities data ----
   ### Read cities data
   tar_target(name = cities_data, command = read_data(path = here::here("data", "cities.csv"), header = TRUE)),

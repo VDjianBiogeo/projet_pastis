@@ -24,15 +24,24 @@ tar_config_set(store = here::here("outputs", "pipeline"),
 
 ```{r}
 knitr::kable(head(tar_read(meteo_data)))
-````
+```
 
-By using a useful analysis called a Principal Component Analysis, we can resume the variance in our dataset and identify towns with similar monthly temperatures.
+Using these temperature data, we should be able to identify which towns show similar monthly temperatures and which ones are radically different. For this, we will use a Principal Component Analysis (or PCA for short).
 
-``` {r}
+![Here's an example of a PCA](illustrations/plots_acp.jpg){fig-align="center"}
+
+It ordinates individuals (observations, french towns in our case) depending on observed values for quantitative variables (here, temperature for each month). As such, individuals with similar values for studied variables will be close to each other, whereas individuals with different values will be far from each other. Without further ado, let's look at the PCA results on our french towns:
+
+```{r}
 tar_load(pca_meteo_graph)
 
 pca_meteo_graph
 ```
 
-If we look closely, towns are split on the first axis, with northern cities such as Lille, Brest or Strasbourg on the left side of the first axis, and with southern cities such as Marseille, Montpellier and Nice on the right side of the axis. But we can see two cities that are in the middle of this axis: **Lyon** and **Nantes**. Could it be that the "south" we so desperatly searched for is below the line traced between Nantes and Lyon?
+If we look closely, towns are split on the first axis, with northern cities such as Lille, Brest or Strasbourg on the left side of the first axis, and with southern cities such as Marseille, Montpellier and Nice on the right side of the axis. But we can see two cities that are in the middle of this axis: **Lyon** and **Nantes**. Could it be that the "south" we so desperatly searched for is below the line traced between Nantes and Lyon? Let's map the PCA's first axis coordinates on a map of France!
 
+```{r}
+tar_load(pca_map)
+
+pca_map
+```
