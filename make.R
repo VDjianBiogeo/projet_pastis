@@ -12,3 +12,5 @@ targets::tar_make()
 
 ## Post visualisation ----
 targets::tar_visnetwork()
+
+quarto::quarto_render(input = here::here("index.qmd"))

@@ -25,17 +25,20 @@ mapping_survey_pca <- function(pca_data){
   row_coord <- cbind(row_coord,
                      pca_data[["call"]]$X)
   
+  lat_col <- names(row_coord)[grepl("latitude", names(row_coord))]
+  lon_col <- names(row_coord)[grepl("longitude", names(row_coord))]
+  
   map <- ggplot() +
     geom_sf(data = sf::st_as_sf(france)) +
     geom_hline(yintercept = 45.18221, linetype = 2,
                color ='orange', linewidth = 1.5) +
-    geom_point(aes(x = "longitude_north",
-                   y = "latitude_north"),
+    geom_point(aes(x = .data[[lon_col]],
+                   y = .data[[lat_col]]),
                pch = 23, fill = "orange",
                color = 'black', size = 4,
                data = row_coord) +
-    ggrepel::geom_label_repel(aes(x = "longitude_north",
-                                  y = "latitude_north",
+    ggrepel::geom_label_repel(aes(x = .data[[lon_col]],
+                                  y = .data[[lat_col]],
                                   label = rownames(row_coord)),
                               data = row_coord) +
     scale_fill_viridis_c() +
