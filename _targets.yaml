@@ -1,5 +1,3 @@
 main:
-  script: C:/Users/valen/Dropbox/Thèse régionalisation subantarctique/Formations/CESAB/Cours
-    et codes/projet_pastis/projet_pastis/analyses/pipeline.R
-  store: C:/Users/valen/Dropbox/Thèse régionalisation subantarctique/Formations/CESAB/Cours
-    et codes/projet_pastis/projet_pastis/outputs/pipeline
+  script: C:/Users/p08650/Desktop/formation_cesab/projet_pastis/analyses/pipeline.R
+  store: C:/Users/p08650/Desktop/formation_cesab/projet_pastis/outputs/pipeline

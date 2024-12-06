@@ -1,40 +1,10 @@
 [
   {
-    "objectID": "survey_summary.html",
-    "href": "survey_summary.html",
-    "title": "3  Finding the south in the hearts of french people",
-    "section": "",
-    "text": "3.1 How people perceive the South\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\nWe then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.\nSo far, we can see that “Anonymous1”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!\nIf we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
-    ]
-  },
-  {
-    "objectID": "survey_summary.html#how-people-perceive-the-south",
-    "href": "survey_summary.html#how-people-perceive-the-south",
-    "title": "3  Finding the south in the hearts of french people",
-    "section": "",
-    "text": "Their childhood town\nThe town where they currently live\nWhich town is the first to be considered in the south\nTheir chilliness (because why not?)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
-    ]
-  },
-  {
-    "objectID": "conclusion.html",
-    "href": "conclusion.html",
-    "title": "4  The end of the adventure",
-    "section": "",
-    "text": "4.1 Conclusion\nIn the end, what did we learn from this project? That the south starts below Lyon? And that people who think that the north starts above Nîmes are liars (kisses to our Côte d’Azur friends)?\nNo, what really mattered in this project is all we learned on project management and data analysis. We learned how to use amazing tools to manage our progress, share our codes and ideas, and allow everyone to have access to it. And for that, some thanks are in order.\nFirst, we would like to thank François, Nicolas, Iago and Aurélie for their amazing teachings. We can’t speak for all of our colleagues, but we’re pretty sure that the feeling is shared. Your commitment to your talks gave life to this formation, and we have learned a lot this last week.\nWe would also like everyone for their participation in this little project. Thank you for humoring us and our silly ideas.\nAnd finally, we would like to thank all lost souls that ended up on this website and took some of their time to read about our project.\nCheers!\nThe PASTIS team",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The end of the adventure</span>"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Project PASTIS",
     "section": "",
-    "text": "Pastis project",
+    "text": "1 Pastis project",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pastis project</span>"
     ]
@@ -43,8 +13,8 @@
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Project PASTIS",
-    "section": "0.1 Introduction",
-    "text": "0.1 Introduction\nThe Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the “south of France”. Through a survey, we collect data from participants who provide :\n\ntheir childhood city and their current city of residence ;\ntheir personal view of the boundaries of the south, north, east, and west on a map ;\ntheir sensitivity to cold (on a scale from 1 to 5, where 1 means “not sensitive to cold” and 5 means “very sensitive to cold”).\n\nBy cross-referencing this data, our project seeks to answer intriguing questions:\n\nWhere are the four cardinal points located according to climatic data ?\nWhere do the French really place the “south of France” ?\nDoes this perception vary depending on their geographical origin or current place of residence ?\nIs there a connection between perceived sensitivity to cold and the location of the south as identified by respondents ?\n\nThe Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the “south” for each individual. 🍹",
+    "section": "1.1 Introduction",
+    "text": "1.1 Introduction\nThe Pastis project aims to explore the geographical and subjective perceptions of the French regarding the location of the “south of France”. Through a survey, we collect data from participants who provide :\n\ntheir childhood city and their current city of residence ;\ntheir personal view of the boundaries of the south, north, east, and west on a map ;\ntheir sensitivity to cold (on a scale from 1 to 5, where 1 means “not sensitive to cold” and 5 means “very sensitive to cold”).\n\nBy cross-referencing this data, our project seeks to answer intriguing questions:\n\nWhere are the four cardinal points located according to climatic data ?\nWhere do the French really place the “south of France” ?\nDoes this perception vary depending on their geographical origin or current place of residence ?\nIs there a connection between perceived sensitivity to cold and the location of the south as identified by respondents ?\n\nThe Pastis project is not just a geographical study; it’s a cultural and sociological exploration infused with humor and curiosity about what defines the “south” for each individual.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pastis project</span>"
     ]
@@ -67,6 +37,36 @@
     "text": "Here’s an example of a PCA",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Defining an objective south</span>"
+    ]
+  },
+  {
+    "objectID": "survey_summary.html",
+    "href": "survey_summary.html",
+    "title": "3  Finding the south in the hearts of french people",
+    "section": "",
+    "text": "3.1 How people perceive the South\nTo answer the question, we asked our dear friends from the CESAB to give us information on:\nWe then joined each town given as the south by our participants with their geographic coordinates (longitude and latitude). We applied a PCA on these geographic coordinates to group together similar answers and identify how people differ in placing the south of France.\nError: objet 'pca_survey_graph' introuvable\nSo far, we can see that “Anonymous1”’s answer differ greatly from the others, but it’s hard to perceive much more from this plot. Let’s see how it is on a map of France!\nError: objet 'pca_map_survey' introuvable\nIf we compare everyone’s answers to the frontier between the south and the rest of France defined by our meteo analysis (showed as a dashed line), We can see that some people chose cities really close to that frontier. But we can also see that a lot of people chose cities on the Mediterranean coast as the south!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
+    ]
+  },
+  {
+    "objectID": "survey_summary.html#how-people-perceive-the-south",
+    "href": "survey_summary.html#how-people-perceive-the-south",
+    "title": "3  Finding the south in the hearts of french people",
+    "section": "",
+    "text": "Their childhood town\nThe town where they currently live\nWhich town is the first to be considered in the south\nTheir chilliness (because why not?)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Finding the south in the hearts of french people</span>"
+    ]
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "4  The end of the adventure",
+    "section": "",
+    "text": "4.1 Conclusion\nIn the end, what did we learn from this project? That the south starts below Lyon? And that people who think that the north starts above Nîmes are liars (kisses to our Côte d’Azur friends)?\nNo, what really mattered in this project is all we learned on project management and data analysis. We learned how to use amazing tools to manage our progress, share our codes and ideas, and allow everyone to have access to it. And for that, some thanks are in order.\nFirst, we would like to thank François, Nicolas, Iago and Aurélie for their amazing teachings. We can’t speak for all of our colleagues, but we’re pretty sure that the feeling is shared. Your commitment to your talks gave life to this formation, and we have learned a lot this last week.\nWe would also like everyone for their participation in this little project. Thank you for humoring us and our silly ideas.\nAnd finally, we would like to thank all lost souls that ended up on this website and took some of their time to read about our project.\nCheers!\nThe PASTIS team",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The end of the adventure</span>"
     ]
   }
 ]
