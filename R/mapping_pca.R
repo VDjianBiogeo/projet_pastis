@@ -13,7 +13,6 @@
 
 mapping_pca <- function(pca_data){
   library(ggplot2)
-  data(World, package = "tmap")
   
   # Download France shapefile
   france <- geodata::gadm(country = "FRA",
