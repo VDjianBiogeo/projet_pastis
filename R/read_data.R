@@ -18,7 +18,7 @@ read_data = function(path, header = FALSE, dec = ".", sep = ",") {
   } else if (stringr::str_detect(string = path, pattern = ".txt")) {
     data = read.table(file = path, header = header, dec = dec, sep = sep)
   }
-
+  
   return(as.data.frame(data))
 }
 

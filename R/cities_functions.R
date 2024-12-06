@@ -128,3 +128,30 @@ pivot_data = function(data, col_id) {
   return(data_long)
 }
 
+################################ 
+
+#' @title Pivot coordinates data in a longer shape.
+#' 
+#' @description
+#' This function pivot the coordinates data in a longer shape. A key column 
+#' must be set.
+#' 
+#' @param data Coordinates data.
+#' @param col_to_keep Names of columns to keep.
+#' @param names Columns containing the names of the columns to create
+#' @param values Columns containing the values
+#' 
+#' @export
+#'
+
+pivot_data_w = function(data, col_to_keep, names, values) {
+  # Transformation
+  data_wide = data |> 
+    dplyr::select(all_of(col_to_keep)) |> 
+    tidyr::pivot_wider(
+      names_from = location,
+      values_from = c(latitude, longitude)
+    ) |> as.data.frame()
+  
+  return(data_wide)
+}
